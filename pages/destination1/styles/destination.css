@@ -21,7 +21,6 @@ main{
     text-align: justify;
     gap: 16px;
     margin-top: 49px;
-    /* overflow: hidden; */
     position: relative;
 }
 h1{
@@ -29,42 +28,120 @@ h1{
     text-align: center;
 }
 h5{
-    width: 221px;
+    width: 240px;
     height: 19px;
     top:2rem;
     font-size: 16px;
     text-align: center;
+    text-transform: uppercase;
 }
 p{
     font-size: 15px;
     width: 90vw;
+    margin: auto;
+    left: 0;
+    right: 0;
     max-width:  327px;
     text-align: center;
 }
 .bg{
-    /* position:relative; */
+    position:relative;
     width: 170px;
     height: 170px;
-    /* display: grid; */
-    /* position:relative ; */
-    left: 4rem;
+    left: 2.5rem;
     border-radius: 100%;
-    /* border: 10px 10px 10px 10px; */
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    /* background-color: (0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    bottom: -3rem;
+
 }
+.last{width:80vw;
+    height: 1px;
+    position:relative;
+    background-color: #383b4b;
+    margin-top:-120px;
+    bottom: -9rem;
+
+}
+
+.rule{
+    position:relative;
+    width: 144px;
+    height: 61px;
+    font-size: 14px;
+    font-weight: 400;
+    bottom: -1rem;
+    left: 0.5px;
+    margin-top: 1px;
+    margin: auto;
+    left: 0;
+    color: #D0D6F9;
+    text-transform: uppercase;
+ }
+ .time{
+    position:relative;
+    width: 122px;
+    height: 61px;
+    bottom:-3rem;
+ }
+ .numb{
+    position: absolute;
+    width: 223px;
+    height: 32px;
+    font-size: 28px;
+    font-weight: 400;
+    bottom: -0.1rem;
+    text-align: center;
+     right: -3rem;
+     color: #ffff;
+ }
+ .dist{width:216px ;
+    height:32px ;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    bottom: -0.8rem;
+    right: 1rem;
+ }
+ .li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    height: 100%;
+ }
+ .links{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+ }
+
+ .links:focus + .focus{
+    width:36px;
+    height: 3px;
+    background:#ffff;
+    position: absolute;
+ }
+ .links:hover +.focus{
+        width:50px;
+        height: 2px;
+        background: rgb(115, 115, 116);
+        position: absolute;
+ }
 .content{
     display:flex;
     flex-direction: rows;
     align-items: center;
     text-align: justify;
     justify-content: space-around;
-    gap:40px;
+    gap:-30px;
     color: #d0d6f9;
-    /* line-height: 16.8px; */
+    line-height: 16.8px;
     list-style: none;
     font-weight: 400;
     font-size: 14px;
+    margin-bottom: 20px;
     text-transform:uppercase;
  /* .circle{
     width: 100%;
@@ -103,28 +180,92 @@ p{
     main{
 
     }
-    .main-content{
-
-
+    .ul{
+        width: 39px;
+        height: 19px;
+        font-size: 16px;
+        font-weight: 400;
     }
-    
     .bg{
         width:300px;
         height: 300px;
     }
     h5{
-        font-size: 24px;
+        width:272px;
+        height: 24px;
+        font-size: 20px;
         font-weight: 400;
+        right: 14rem;
+        margin-top: 30px;
+        text-transform: uppercase;
+        top:-2rem;
+        position:absolute;
+        /* padding-bottom: 343px; */
     }
-    h1{
+    .numb{font-size:28px;
+        font-weight: 400;
+        bottom: -3rem;
+        right: 3rem;
+        position: absolute;
+        /* opacity: 0.25; */
+    }
+    .back-img{
+        position: relative;
+    }
+    .bg{
+        left: -1rem;
+    }
+    h1{width: 266px;
+        height: 92px;
         font-size: 80px;
         font-weight: 400;
+        margin: auto;
+        left: 0;
+        right: 0;
+        margin-bottom: 8px;
+        margin-top: 32px;
     }
-    p{
+    .word{
+        position:absolute;
+        width:573px;
+        height:84px;
+        text-transform: capitalize;
         font-size: 16px;
-        font-weight: 400;
+        margin: auto;
+        left: 0;
+        right: 0;
+        font-weight:400;
+
+        }
+         .last{ 
+                width:572px; 
+                height: 90px;
+                position:relative;
+                display: flex;
+                flex-direction:column;
+                justify-content: space-between;
+                bottom:12rem;
+                background: #383b4b;
+                margin-top: 293px;
+        }
+        .distance{
+            position:absolute;
+            width:216px;
+            height: 17px;
+            top: -2rem;
+            left:-7rem;
+            margin-top: 29px;
+          }
+          .time{
+            position:absolute;
+            width: 223px;
+            height: 17px;
+            top: -1.6rem;
+            right: -18rem;
+            margin-top:29px;
+         }
     }
-}
+
 
 /* Destop Screen */
 @media (min-width: 1110px) {
@@ -139,8 +280,8 @@ p{
         padding-bottom: 131px;
     }
     .main-content{
-        align-items: flex-start;
-        position: relative;
+        /* align-items: flex-start; */
+        /* position: relative; */
     }
     .bg{
         width:445px;
@@ -150,32 +291,30 @@ p{
         position:relative;
         
     }
+    .back-img{
+       position: relative;
+       bottom: -4rem;
+   }
+   .nun{
+       font-weight: 700;
+       size: 28px;
+       line-height: 33.6px;
+       color: #383b4b;;
+   }
     h5{
-        width: 382px;
+        width:382px;
         height: 34px;
         font-size: 28px;
         font-weight: 400;
         text-transform: uppercase;
         bottom:-4rem;
+        left: 10px;
         position:absolute;
         padding-bottom: 343px;
     }
-    h1{
-        width: 333px;
-        height: 115px;
-        font-size: 100px;
-        font-weight: 400;
-    }
-    p{width: 444px;
-        height: 128px;
-        font-size: 18px;
-        font-weight: 400;
-        text-align:justify;
-    }
-
-    .sub{
-        width: 445px;
-        height: 472px;
+    .sub{ 
+        width:448px;
+        height:472px;
         top: 246px;
         position: relative;
         margin-top: 246px;
@@ -184,44 +323,79 @@ p{
     .content{
         width: 285.5px;
         height: 34px;
-        top: -4rem;
+        top: -3rem;
         position: absolute;
-        left:0.2rem;
+        left:3rem;
+        gap: 40px;
     }
-     .back-img{
-        position: relative;
-        bottom: -4rem;
+
+     h1{ 
+         width: 333px; 
+        height: 115px;
+        font-size: 100px;
+        font-weight: 400;
     }
-    .nun{
-        font-weight: 700;
-        size: 28px;
-        line-height: 33.6px;
-        color: #383b4b;;
+    .word{width:444px;
+        height:128px;
+        font-size:18px;
+        font-weight:400;
+        text-align: justify;
+        word-spacing:-1px;
+
+        position:absolute;
+        /* text-align:center; */
     }
-    .last{width:350px;
+
+    .last{width:440px;
         height: 1px;
-        position:relative;
-        background-color: #383b4b;
+        position:absolute;
         margin-top:-120px;
-    }
-    .distance{
+        bottom:10rem;
+        color: #383b4b;
+        /* left: -9rem; */
+    
+        margin-top:1px; */
+     }
+     .rule{left: 6rem;
         position: relative;
+   
+     }
+     .distance{
+        position:absolute;
+        width:144px;
+        height: 61px;
+        top: -2rem;
+        left:-15rem;
+        margin-top: 29px;
+      }
+      .time{
+        position:absolute;
+        width: 122pxpx;
+        height: 61px;
+        top: -1.6rem;
+        right: -20rem;
+        margin-top:29px;
+     }
+     .numb{
+        position: absolute;
+        left: -3rem;
+        top: 1.5rem;
+     }
+    }
+    /* .distance{
+        position:absolute;
         width: 143px;
         height: 61px;
-        top: -7rem;
+        bottom: 2rem;
         left: 0.5px;
         margin-top: 1px;
      }
      .time{
-        position:relative;
+        position:absolute;
         width: 122px;
         height: 61px;
         top: -19rem;
         right: -12rem;
-        margin-top:1px;
-     }
-     
-    }
 
 
     }
