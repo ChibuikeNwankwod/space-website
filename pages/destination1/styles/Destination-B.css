@@ -13,6 +13,18 @@ main{
     justify-content: space-around;
     gap: 81px;
 }
+.line{
+    width:410px;
+    height: 1px;
+    position:relative;
+    background-color: #383b4b;
+    /* margin-top:-120px; */
+    bottom: -1.5rem;
+    left: 2rem;
+    display: none;
+
+
+}
 .main-content{
  
     display: flex;
@@ -44,6 +56,14 @@ p{
     max-width:  327px;
     text-align: center;
 }
+.bg-desk{
+    position:relative;
+    width: 170px;
+    height: 170px;
+    left: 2.5rem;
+    border-radius: 100%;
+    bottom: -3rem;
+}
 .bg{
     position:relative;
     width: 170px;
@@ -51,7 +71,13 @@ p{
     left: 2.5rem;
     border-radius: 100%;
     bottom: -3rem;
+    rotate:360deg;
+    opacity: 0.65;
+    /* color: #0B0D17; */
 
+}
+.bg-desk{
+    display: none;
 }
 .last{width:80vw;
     height: 1px;
@@ -68,7 +94,7 @@ p{
     height: 61px;
     font-size: 14px;
     font-weight: 400;
-    bottom: -1rem;
+    bottom: -2rem;
     left: 0.5px;
     margin-top: 1px;
     margin: auto;
@@ -80,7 +106,7 @@ p{
     position:relative;
     width: 122px;
     height: 61px;
-    bottom:-3rem;
+    bottom:-5rem;
  }
  .numb{
     position: absolute;
@@ -93,15 +119,14 @@ p{
      right: -3rem;
      color: #ffff;
  }
- .dist{width:216px ;
+ .dist{width:300px;
     height:32px ;
     font-size: 28px;
     font-weight: 400;
+    position: absolute;
     text-align: center;
-    position: relative;
-    text-align: center;
-    bottom: -0.8rem;
-    right: 1rem;
+    bottom: -0.1rem;
+    right: -4rem;
  }
  .li{
     display: flex;
@@ -143,33 +168,7 @@ p{
     font-size: 14px;
     margin-bottom: 20px;
     text-transform:uppercase;
- /* .circle{
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    display:flex;
-    place-items: center;
-    background: var(--text-color);
-    color: var(--primary-color);
-    font-size: 20px;
-    position: relative;
-    font-size: bold;
-    cursor: pointer; */  */
-
-
-/* .circle:hover + .hover-circle{
-   
-    width: 150%;
-    height: 150%;
-    position: absolute;
-    background-color: var(--text-color);
-    opacity: 0.1;
-    border-radius: 50%;
-   margin: auto; */
-
-
 }
-
 
 /* Tablet Screen */
  @media (min-width:768px ) {
@@ -186,9 +185,10 @@ p{
         font-size: 16px;
         font-weight: 400;
     }
-    .bg{
+    .bg-desk{
         width:300px;
         height: 300px;
+        
     }
     h5{
         width:272px;
@@ -212,8 +212,13 @@ p{
     .back-img{
         position: relative;
     }
-    .bg{
+    .bg-desk{
         left: -1rem;
+        display: inline;
+        /* opacity: 0.25; */
+    }
+    .bg{
+        display: none;
     }
     h1{width: 266px;
         height: 92px;
@@ -239,14 +244,18 @@ p{
         }
          .last{ 
                 width:572px; 
-                height: 90px;
+                height: 2px;
                 position:relative;
                 display: flex;
                 flex-direction:column;
-                justify-content: space-between;
+                /* justify-content: space-between; */
                 bottom:12rem;
-                background: #383b4b;
                 margin-top: 293px;
+
+        /* } */
+        /* .last:hover{
+            height: 90px;
+            background-color: transparent; */
         }
         .distance{
             position:absolute;
@@ -264,7 +273,14 @@ p{
             right: -18rem;
             margin-top:29px;
          }
-    }
+         .dist{
+    position: absolute;
+    text-align: left;
+    bottom: -3rem;
+    right: -4rem;
+ }
+
+         }
 
 
 /* Destop Screen */
@@ -283,13 +299,16 @@ p{
         /* align-items: flex-start; */
         /* position: relative; */
     }
-    .bg{
+    .bg-desk{
         width:445px;
         height:445px;
         bottom:-7rem;
         border-radius: 50%;
         position:relative;
         
+    }
+    .bg{
+        display:n
     }
     .back-img{
        position: relative;
@@ -349,8 +368,8 @@ p{
     .last{width:440px;
         height: 1px;
         position:absolute;
-        margin-top:-120px;
-        bottom:10rem;
+        /* margin-top:-120px; */
+        bottom:12rem;
         color: #383b4b;
         /* left: -9rem; */
     
@@ -381,142 +400,7 @@ p{
         left: -3rem;
         top: 1.5rem;
      }
-    }
-    /* .distance{
-        position:absolute;
-        width: 143px;
-        height: 61px;
-        bottom: 2rem;
-        left: 0.5px;
-        margin-top: 1px;
+     .line{
+        display:inline;
      }
-     .time{
-        position:absolute;
-        width: 122px;
-        height: 61px;
-        top: -19rem;
-        right: -12rem;
-
-
     }
-}
-/* * {
-    background-image: url(../../assets/images/destination/mobilebg-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-} */
-/* .menu{
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 81px; */
-/* 
-.one{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: justify;
-    gap: 16px;
-    justify-content: space-around;
-
-}
-.content{
-    display:flex;
-    flex-direction: rows;
-    align-items: center;
-    text-align: justify;
-    justify-content: space-around;
-    gap: 26px;
-    list-style: none;
-    font-size: 14px;
-    text-transform:uppercase;
-}
-.moon{
-    width: 170px;
-    height: 170px;
-    border-radius: 100%;
-}
-h5{
-    position: relative;
-    align-items: center;
-    font-size:16px;
-    text-transform:uppercase;
-}
-.two{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    text-align:justify;
-    gap:16px;
-    font-size: 15px;
-    text-transform:uppercase;
-    margin-left:25px;
-    margin-left: 23px;
-    top: -8rem;
-}
-.rect{
-    position:absolute;
-    width: 80vw;
-    margin-left: 24px;
-    margin-right: 24px;
-    height: 1px;
-    bottom: -170px;
-      /* left: 24px;  */
-     /* top:-100px; */
-    /* background: #383b4b; */
-}
-/* h1{
-    font-size: 56px;
-}
-.word{
-    top: -5rem;
-    position: relative;
-}
-.three{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    text-align:justify;
-    gap:16px;
-    font-size: 15px;
-    text-transform:uppercase;
-    top: -5rem;
-    position: relative; */
-/* }
-.sec-one{
-    margin: auto;
-    align-content: center;
-    width: 90vw;
-    height: 90vh;
-    background-color: brown;
-
-} */ */
-/* .distance{
-    margin: auto;
-    width: 90vw;
-    height: 90vh;
-    position:absolute;
-    place-items: center;
-    background-color: hsl(185, 75%, 27%);
-}
-.dig{
-    position:absolute;
-    top: 2rem;
-    font-size: 28px;
-    font-weight: 400;
-}
-.time{
-    position: absolute;
-    top: 4rem;
-    font-weight: 400;
-}
-.day{
-    position: absolute;
-    top: 2rem;
-    font-size: 28px;
-    font-weight: 400;
-    text-align: center;
-} */

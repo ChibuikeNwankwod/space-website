@@ -1,5 +1,5 @@
 body{
-    background: url('../assets/images/destination/mobilebg-image.jpg');
+    background: url('../../../assets/images/index/mobile-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -71,7 +71,7 @@ p{
 /* Tablet Screen */
  @media (min-width:768px ) {
     body{
-    background-image: url('../assets/images/index/tablet-bg.jpg');
+    background-image: url('../../../assets/images/index/tablet-bg.jpg');
 
     }
     main{
@@ -97,7 +97,7 @@ p{
 /* Destop Screen */
 @media (min-width: 1110px) {
     body{
-    background-image: url('../assets/images/index/bg-image.png');
+    background-image: url('../../../assets/images/index/bg-image.png');
     
     }
     main{
