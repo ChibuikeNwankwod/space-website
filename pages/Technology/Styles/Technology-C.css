@@ -1,0 +1,81 @@
+body {
+    background: url('../../../assets/images/Technology/technology-mobile-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+main{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 81px;
+}
+
+.container{
+    max-width:375px;
+    height: 710px;
+}
+.img{
+    width: 374px;
+    height: 170px;
+    top: 100px;
+    size: cover;
+    margin-top:36px;
+    position: relative;
+}
+.cap{
+    width: 176px;
+    height: 19px;
+    top:10px;
+    margin-top:88px;
+    text-align:center;
+    position:relative;
+}
+.word{
+    width: 327px;
+    height: 150px;
+    top: 300px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+.heading{
+    bottom:-18.5rem;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    position:relative;
+}
+p{
+    width: 327px;
+    height: 28px;
+    text-align: center;
+}
+.top{
+    width:132px ;
+    height: 17px;
+    text-align: center;
+    font-size: 14px;
+}
+.bottom{
+    width: 327px;
+    height: 28px;
+    left: 2rem;
+    position:relative;
+    text-align: center;
+}
+.num{
+    width: 17px;
+    height: 19px;
+    opacity: 25%;
+    font-size: 16px;
+    font-weight: 700;
+}

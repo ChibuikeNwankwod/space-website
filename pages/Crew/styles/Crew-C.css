@@ -337,7 +337,7 @@ p {
         position: relative;
         top:-0.7rem;
         left: -0.6rem;
-        /* width: 90vw; */
+        width:450px;
         /* text-align: center;  */
     }
 
@@ -383,7 +383,7 @@ p {
         width: 87px;
         height: 37px;
         position: relative;
-        right: 12rem;
+        right: 11.5rem;
     }
 }
 

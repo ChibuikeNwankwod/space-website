@@ -221,9 +221,9 @@ p {
         bottom: -2rem;
     }
     .career{
-        width:232px;
+        width:240px;
         height: 28px;
-        right: 8rem;
+        right:6rem;
         position: absolute;
     }
 
@@ -339,8 +339,8 @@ p {
         font-size:56px;
         position: relative;
         top:-0.7rem;
-        left: -0.4rem;
-        width:614px;
+        left: -5.5rem;
+        width:800px;
         height: 64px;
         /* text-align: center;  */
     }
@@ -387,6 +387,6 @@ p {
         width:309px;
         height: 37px;
         position: relative;
-        right: 4rem;
+        right: 3.6rem;
     }
 }
