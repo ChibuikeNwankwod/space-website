@@ -3,6 +3,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    z-index: -1;
+    position: relative;
 
 }
 
@@ -21,14 +23,15 @@ main{
     display: none;
 }
 
-.container{
+/* /* .container{
+    
     max-width:375px;
     height: 220px;
     position: absolute;
     margin: auto;
     right: 0;
     left: 0;
-}
+} */
 .img{
     width: 374px;
     height: 170px;
@@ -57,7 +60,7 @@ main{
 .word{
     width: 327px;
     height: 150px;
-    top: 255px;
+    top: 285px;
     margin: auto;
     left: 0;
     right: 0;
@@ -108,53 +111,91 @@ p{
     /* top: -200px; */
     position:absolute;
     text-align: center;
-} 
-.circle-div{
+}
+.links{
+   color: inherit;
+   text-decoration: none;
+   display: block;
+}
+
+.links:focus + .focus{
+   width:36px;
+   height: 3px;
+   background:#ffff;
+   position: absolute;
+}
+.links:hover +.focus{
+       width:50px;
+       height: 2px;
+       background: rgb(115, 115, 116);
+       position: absolute; 
+       
+     }
+.circle-div {
     position: relative;
     width: 152px;
     aspect-ratio: 1/1;
-    display:flex;
-    gap:1rem;
+    display: flex;
+    gap: 1rem;
     place-items: center;
-    top:1rem;
+    top: 1rem;
     left: 6rem;
+    cursor:pointer;
 }
-.circle{
-    width:50%;
+.circle {
+    width: 50%;
     aspect-ratio: 1/1;
     border-radius: 50%;
+    display: grid;
     place-items: center;
-    background: var(--text-color);
-    color: var(--primary-color);
+    /* background: var(--text-color); */
+    color: white;
+    border: 1px solid white;
+    /* color: var(--primary-color); */
     font-size: 20px;
     position: relative;
     font-size: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
+
+.circle:focus{
+    /* background-color: white; */
+    background: var(--text-color);
+    color: var(--primary-color);
+
+
+}
+
 .circle-two{
     width: 50%;
     aspect-ratio: 1/1;
     border-radius: 50%;
+    display: grid;
     place-items: center;
-    background: var(--text-color);
-    /* opacity:0.05; */
-    color: var(--primary-color);
+    /* background: var(--text-color); */
+    color: white;
+    border: 1px solid white;
+    /* color: var(--primary-color); */
     font-size: 20px;
     position: relative;
     font-size: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
-.circle-three{
+
+.circle-three {
     width: 50%;
+    display: grid;
     aspect-ratio: 1/1;
     border-radius: 50%;
     place-items: center;
-    background: var(--text-color);
-    color: var(--primary-color);
+    /* background: var(--text-color); */
+    /* color: var(--primary-color); */
+    color: white;
+    border: 1px solid white;
     font-size: 20px;
     position: relative;
     font-size: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .nun{
     width: 17px;
@@ -167,6 +208,8 @@ p{
 @media (min-width:768PX) {
     body{
         background: url(../../../assets/images/Technology/Technology-desktop-bg.png);
+        position: relative;
+        z-index: -1;
     }
     .image-two{
         width:768px;
@@ -212,7 +255,9 @@ p{
         width:458px;
         height:237px;
         position: absolute;
-        top: 470px;
+        top: 510px;
+        font-weight: 400;
+        font-size: 16px;
         margin: auto;
         left:-3rem;
         right: 0;
@@ -237,8 +282,17 @@ p{
         font-size: 20px;
     }
     .bottom{
-        left:0.5rem;
+        width: 457px;
+        height: 46px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 40px;
+        left:-2rem;
         position: absolute;
+    }
+    .Top{
+        right:-2rem;
+        position: relative;
     }
 }
 
@@ -249,6 +303,7 @@ p{
         background: url(../../../assets/images/Technology/Technology-desktop-bg.png);
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
     }
     .image-two{
         display: none;

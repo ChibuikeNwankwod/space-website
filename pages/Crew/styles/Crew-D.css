@@ -46,15 +46,6 @@ h1 {
 
 }
 
-.radio {
-    bottom: -2.5rem;
-    left: 3rem;
-    position: relative;
-    text-align: center;
-
-
-}
-
 .name {
     text-align: center;
     font: 16px;
@@ -137,6 +128,41 @@ p {
 .bg-desk {
     display: none;
 }
+.circle-div {
+    position: relative;
+    /* width: 152px; */
+    aspect-ratio: 1/1;
+    display: flex;
+    gap: 1rem;
+    place-items: center;
+    top: -10.3rem;
+    left: 10rem;
+    cursor: pointer;
+}
+
+.circle {
+    width:15px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    /* background: var(--text-color); */
+    color: white;
+    border: 1px solid white;
+    /* color: var(--primary-color); */
+    font-size: 20px;
+    position: relative;
+    font-size: bold;
+    /* cursor: pointer; */
+}
+
+.circle:focus {
+    /* background-color: white; */
+    background: var(--text-color);
+    color: var(--primary-color);
+
+
+}
 
 
 
@@ -144,6 +170,7 @@ p {
 @media (min-width:768px) {
      body {
         background-image: url('../../../assets/images/crew/Crewbg-desktop.jpg');
+        position: relative;
 
     }
 
@@ -223,7 +250,7 @@ p {
         bottom: -2rem;
     }
     .career{
-        width: 205px;
+        width: 225px;
         height: 28px;
         right: 4rem;
         position: absolute;
@@ -249,18 +276,9 @@ p {
         position: relative;
         /* text-align:center; */
     }
-
-    .radio {
-        width: 88px;
-        height: 10px;
-        position: absolute;
-        bottom: -2rem;
-        left: 18rem;
-        margin-top: 40px;
-        /* color: #383b4b; */
-        /* left: -9rem; */
-
-
+    .circle-div{
+        top:100px;
+        left:300px;
     }
     }
    
@@ -367,19 +385,6 @@ p {
         position: relative;
         /* text-align:center; */
     }
-
-    .radio {
-        width: 132px;
-        height: 15px;
-        position: absolute;
-        bottom:-5rem;
-        left: 1rem;
-        margin-top: 40px;
-        /* color: #383b4b; */
-        /* left: -9rem; */
-
-
-    }
     .line{
         position: relative;
         top: -27rem;
@@ -390,5 +395,8 @@ p {
         height: 37px;
         position: relative;
         right: 6.8rem;
+    }
+    .circle-div{
+        left: 50px;
     }
 }

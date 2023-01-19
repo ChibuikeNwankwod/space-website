@@ -3,6 +3,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    z-index: -1;
+    position: relative;
 
 }
 
@@ -38,7 +40,26 @@ main{
     margin-top:36px;
     position: relative;
 }
-.image-one{
+.links{
+   color: inherit;
+   text-decoration: none;
+   display: block;
+}
+
+.links:focus + .focus{
+   width:36px;
+   height: 3px;
+   background:#ffff;
+   position: absolute;
+}
+.links:hover +.focus{
+       width:50px;
+       height: 2px;
+       background: rgb(115, 115, 116);
+       position: absolute;
+
+
+}.image-one{
     width:474px;
     position:absolute;
     height: 170px;
@@ -109,52 +130,73 @@ p{
     position:absolute;
     text-align: center;
 } 
-.circle-div{
+.circle-div {
     position: relative;
     width: 152px;
     aspect-ratio: 1/1;
-    display:flex;
-    gap:1rem;
+    display: flex;
+    gap: 1rem;
     place-items: center;
-    top:1rem;
+    top: 1rem;
     left: 6rem;
+    cursor:pointer;
+    
 }
-.circle{
-    width:50%;
+
+.circle {
+    width: 50%;
     aspect-ratio: 1/1;
     border-radius: 50%;
+    display: grid;
     place-items: center;
-    background: var(--text-color);
-    color: var(--primary-color);
+    /* background: var(--text-color); */
+    color: white;
+    border: 1px solid white;
+    /* color: var(--primary-color); */
     font-size: 20px;
     position: relative;
     font-size: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
+
+.circle-two:focus{
+    /* background-color: white; */
+    background: var(--text-color);
+    color: var(--primary-color);
+
+
+}
+
 .circle-two{
     width: 50%;
     aspect-ratio: 1/1;
     border-radius: 50%;
+    display: grid;
     place-items: center;
-    background: var(--text-color);
-    /* opacity:0.05; */
-    color: var(--primary-color);
+    /* background: var(--text-color); */
+    color: white;
+    border: 1px solid white;
+    /* color: var(--primary-color); */
     font-size: 20px;
     position: relative;
     font-size: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
-.circle-three{
+
+.circle-three {
     width: 50%;
+    display: grid;
     aspect-ratio: 1/1;
     border-radius: 50%;
     place-items: center;
-    background: var(--text-color);
-    color: var(--primary-color);
+    /* background: var(--text-color); */
+    /* color: var(--primary-color); */
+    color: white;
+    border: 1px solid white;
     font-size: 20px;
     position: relative;
     font-size: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .nun{
     width: 17px;
@@ -167,6 +209,7 @@ p{
 @media (min-width:768PX) {
     body{
         background: url(../../../assets/images/Technology/Technology-desktop-bg.png);
+        position: relative;
     }
     .image-two{
         width:768px;
@@ -207,19 +250,24 @@ p{
         width:458px;
         height: 237px;
         position: absolute;
+        z-index: -1;
     }
     .word{
         width:458px;
-        height:237px;
+        height:140px;
         position: absolute;
         top: 470px;
         margin: auto;
         left:-3rem;
         right: 0;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+        font-size: 16px;
 
     }
     .heading{
-        position: absolute;
+        position:relative;
         top: 250px;
     }
     p{
@@ -237,8 +285,9 @@ p{
         font-size: 20px;
     }
     .bottom{
+        font-size: 40px;
         left:0.5rem;
-        position: absolute;
+        position:relative;
     }
 }
 
@@ -249,6 +298,8 @@ p{
         background: url(../../../assets/images/Technology/Technology-desktop-bg.png);
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: -1;
+        position: relative;
     }
     .image-two{
         display: none;

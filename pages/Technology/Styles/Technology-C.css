@@ -3,10 +3,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    z-index: -1;
+    position: relative;
 
 }
 
-main{
+main {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -14,47 +16,54 @@ main{
     justify-content: space-around;
     gap: 81px;
 }
-.image-two{
-    display: none;
-}
-.image-desk{
+
+.image-two {
     display: none;
 }
 
-.container{
-    max-width:375px;
+.image-desk {
+    display: none;
+}
+
+.container {
+    max-width: 375px;
     height: 220px;
     position: absolute;
     margin: auto;
     right: 0;
     left: 0;
+    z-index: -1;
 }
-.img{
+
+.img {
     width: 374px;
     height: 170px;
     bottom: -150px;
-    size:cover ;
+    size: cover;
     left: -3rem;
-    margin-top:36px;
+    margin-top: 36px;
     position: relative;
 }
-.image-one{
-    width:474px;
-    position:absolute;
+
+.image-one {
+    width: 474px;
+    position: absolute;
     height: 170px;
 
 }
-.cap{
+
+.cap {
     width: 176px;
     height: 19px;
-    top:5px;
+    top: 5px;
     font-size: 16px;
     text-transform: uppercase;
-    margin-top:88px;
-    text-align:center;
-    position:absolute;
+    margin-top: 88px;
+    text-align: center;
+    position: absolute;
 }
-.word{
+
+.word {
     width: 327px;
     height: 150px;
     top: 255px;
@@ -66,33 +75,58 @@ main{
     font-size: 15px;
     font-weight: 400;
 }
-.heading{
+
+.heading {
     width: 327px;
     height: 54px;
     font-size: 24px;
     text-align: center;
     top: 100px;
     font-weight: 400;
-    position:relative;
+    position: relative;
 }
-p{
+
+.links {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.links:focus+.focus {
+    width: 36px;
+    height: 3px;
+    background: #ffff;
+    position: absolute;
+}
+
+.links:hover+.focus {
+    width: 50px;
+    height: 2px;
+    background: rgb(115, 115, 116);
+    position: absolute;
+
+}
+
+p {
     width: 327px;
     height: 28px;
     text-align: center;
 }
-.top{
-    width:132px;
+
+.top {
+    width: 132px;
     height: 17px;
-    right:-3rem;
+    right: -3rem;
     /* bottom: -160px; */
-    position:relative;
+    position: relative;
     text-align: center;
     font-size: 14px;
 }
-.line{
-    width:410px;
+
+.line {
+    width: 410px;
     height: 1px;
-    position:absolute;
+    position: absolute;
     background-color: #383b4b;
     /* margin-top:-120px; */
     /* bottom: -1.5rem; */
@@ -101,80 +135,107 @@ p{
 
 
 }
-.bottom{
+
+.bottom {
     width: 327px;
     height: 28px;
-    left:1.2rem;
+    left: 1.2rem;
     /* top: -200px; */
-    position:absolute;
+    position: absolute;
     text-align: center;
-} 
-.circle-div{
+}
+
+.circle-div {
     position: relative;
     width: 152px;
     aspect-ratio: 1/1;
-    display:flex;
-    gap:1rem;
+    display: flex;
+    gap: 1rem;
     place-items: center;
-    top:1rem;
+    top: 1rem;
     left: 6rem;
+    cursor:pointer;
+    
 }
-.circle{
-    width:50%;
+
+.circle {
+    width: 50%;
     aspect-ratio: 1/1;
     border-radius: 50%;
+    display: grid;
     place-items: center;
-    background: var(--text-color);
-    color: var(--primary-color);
+    /* background: var(--text-color); */
+    color: white;
+    border: 1px solid white;
+    /* color: var(--primary-color); */
     font-size: 20px;
     position: relative;
     font-size: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
+
+.circle-three:focus{
+    /* background-color: white; */
+    background: var(--text-color);
+    color: var(--primary-color);
+
+
+}
+
 .circle-two{
     width: 50%;
     aspect-ratio: 1/1;
     border-radius: 50%;
+    display: grid;
     place-items: center;
-    background: var(--text-color);
-    /* opacity:0.05; */
-    color: var(--primary-color);
+    /* background: var(--text-color); */
+    color: white;
+    border: 1px solid white;
+    /* color: var(--primary-color); */
     font-size: 20px;
     position: relative;
     font-size: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
-.circle-three{
+
+.circle-three {
     width: 50%;
+    display: grid;
     aspect-ratio: 1/1;
     border-radius: 50%;
     place-items: center;
-    background: var(--text-color);
-    color: var(--primary-color);
+    /* background: var(--text-color); */
+    /* color: var(--primary-color); */
+    color: white;
+    border: 1px solid white;
     font-size: 20px;
     position: relative;
     font-size: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
-.nun{
+
+.nun {
     width: 17px;
     height: 19px;
     opacity: 25%;
     font-size: 16px;
     font-weight: 700;
 }
+
 /* TABLET SCREEN */
 @media (min-width:768PX) {
-    body{
+    body {
         background: url(../../../assets/images/Technology/Technology-desktop-bg.png);
+        position: relative;
     }
-    .image-two{
-        width:768px;
+
+    .image-two {
+        width: 768px;
         height: 310px;
         bottom: -150px;
-        size:cover ;
-        left: -14.5rem;
-        margin-top:36px;
+        size: cover;
+        left: -9.5rem;
+        margin-top: 36px;
         position: absolute;
         /* position: relative; */
         /* width: 768px;
@@ -183,46 +244,54 @@ p{
         left: 0px; */
 
     }
-    .image-two{
+
+    .image-two {
         display: inline;
     }
-    .image-desk{
-    display: none;
-}
-    .image-one{
+
+    .image-desk {
         display: none;
-        
     }
-    .cap{
-        width:217px;
+
+    .image-one {
+        display: none;
+
+    }
+
+    .cap {
+        width: 217px;
         height: 24px;
-        top:6rem;
+        top: 6rem;
         left: -15rem;
         font-size: 16px;
         text-transform: uppercase;
-        position:relative;
+        position: relative;
 
     }
-    .container{
-        width:458px;
+
+    .container {
+        width: 458px;
         height: 237px;
         position: absolute;
     }
-    .word{
-        width:458px;
-        height:237px;
+
+    .word {
+        width: 458px;
+        height: 237px;
         position: absolute;
         top: 470px;
         margin: auto;
-        left:-3rem;
+        left: -3rem;
         right: 0;
 
     }
-    .heading{
+
+    .heading {
         position: absolute;
         top: 250px;
     }
-    p{
+
+    p {
         width: 217px;
         height: 24px;
         font-size: 20px;
@@ -230,119 +299,137 @@ p{
         left: 4rem;
         position: absolute;
     }
-    .nun{
+
+    .nun {
         width: 22px;
         height: 24px;
         font-weight: 700;
         font-size: 20px;
     }
-    .bottom{
-        left:0.5rem;
+
+    .bottom {
+        font-size: 40px;
+        left: 0.5rem;
         position: absolute;
     }
 }
 
 /* Desktop Screen */
-@media (min-width:1110px){
+@media (min-width:1110px) {
 
-    body{
+    body {
         background: url(../../../assets/images/Technology/Technology-desktop-bg.png);
         background-repeat: no-repeat;
         background-size: cover;
+        z-index: -1;
+        position: relative;
     }
-    .image-two{
+
+    .image-two {
         display: none;
     }
-    .image-desk{
+
+    .image-desk {
         display: inline;
-         width: 515px;
+        width: 515px;
         height: 500px;
         bottom: -240px;
-        size:cover ;
+        size: cover;
         left: 24.5rem;
         /* margin-top:36px; */
         position: absolute;
     }
-    .nun{
-        font-size:28px;
+
+    .nun {
+        font-size: 28px;
         width: 30px;
         height: 34px;
         font-weight: 700;
         opacity: 25%;
     }
-    p{
-        width:300px;
-        top:40px ;
+
+    p {
+        width: 300px;
+        top: 40px;
         height: 34px;
         left: -100px;
         position: absolute;
         font-size: 28px;
         font-weight: 400;
     }
-    .img{
-        width:790.5px;
-        height:527px;
+
+    .img {
+        width: 790.5px;
+        height: 527px;
         /* top:6rem; */
         /* left: -15rem; */
         /* font-size: 16px; */
         /* text-transform: uppercase; */
-        position:absolute;
+        position: absolute;
     }
-    .word{
-        width:438px;
-        height:192px;
+
+    .word {
+        width: 438px;
+        height: 192px;
         position: absolute;
         top: 300px;
         text-align: justify;
         left: -450px;
-     }
-     .Top{
-        left:2rem;
-        top: 4rem;
-        position:absolute;
-     }
+    }
 
-     .bottom{
+    .Top {
+        left: 2rem;
+        top: 4rem;
+        position: absolute;
+    }
+
+    .bottom {
         right: -410px;
-        width:450px ;
+        width: 450px;
         height: 64px;
         top: 5rem;
-        font-size:56px;
-     }
-     .circle-div{
-        top:4rem;
+        font-size: 56px;
+    }
+
+    .circle-div {
+        top: 4rem;
         position: absolute;
         left: -120px;
         display: grid;
-     }
-     .heading{
+    }
+
+    .heading {
         /* font-size: 56px; */
         font-weight: 400;
         /* width:417px ;
         height: 64px; */
-        top:160px;
-        left:-280px;
-        position:absolute;
-     }
-     .container{
-    width:444px;
-    height:303px;
-    position: absolute;
-    /* margin: auto;
+        top: 160px;
+        left: -280px;
+        position: absolute;
+    }
+
+    .container {
+        width: 444px;
+        height: 303px;
+        position: absolute;
+        /* margin: auto;
     right: 0;
     left: 0; */
- }
- .circle{
-    width: 30%;
- }
- .circle-two{
-    width: 30%;
- }
- .circle-three{
-    width: 30%;
- }
- .line{
-    display: inline;
- }
-}
+    }
 
+    .circle {
+        width: 30%;
+    }
+
+    .circle-two {
+        width: 30%;
+    }
+
+    .circle-three {
+        width: 30%;
+    }
+
+    .line {
+        display: inline;
+    }
+}

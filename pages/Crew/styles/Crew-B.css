@@ -45,12 +45,38 @@ h1 {
     text-align: center;
 
 }
-
-.radio {
-    bottom: -2.5rem;
-    left: 3rem;
+.circle-div {
     position: relative;
-    text-align: center;
+    /* width: 152px; */
+    aspect-ratio: 1/1;
+    display: flex;
+    gap: 1rem;
+    place-items: center;
+    top: -12rem;
+    left: 10rem;
+    cursor: pointer;
+}
+
+.circle {
+    width:15px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    /* background: var(--text-color); */
+    color: white;
+    border: 1px solid white;
+    /* color: var(--primary-color); */
+    font-size: 20px;
+    position: relative;
+    font-size: bold;
+    /* cursor: pointer; */
+}
+
+.circle:focus {
+    /* background-color: white; */
+    background: var(--text-color);
+    color: var(--primary-color);
 
 
 }
@@ -260,6 +286,11 @@ p {
 
 
     }
+    .circle-div{
+        top:100px;
+        left:220px;
+    }
+
     }
    
    
@@ -388,5 +419,8 @@ p {
         height: 37px;
         position: relative;
         right: 3.6rem;
+    }
+    .circle-div{
+        left: 50px;
     }
 }

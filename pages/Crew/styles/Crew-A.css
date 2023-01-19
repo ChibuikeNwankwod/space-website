@@ -3,6 +3,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    z-index: -1;
+    position: relative;
 
 }
 
@@ -46,11 +48,38 @@ h1 {
 
 }
 
-.radio {
-    bottom: -2.5rem;
-    left: 3rem;
+.circle-div {
     position: relative;
-    text-align: center;
+    /* width: 152px; */
+    aspect-ratio: 1/1;
+    display: flex;
+    gap: 1rem;
+    place-items: center;
+    top: -12rem;
+    left: 10rem;
+    cursor: pointer;
+}
+
+.circle {
+    width:15px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    /* background: var(--text-color); */
+    color: white;
+    border: 1px solid white;
+    /* color: var(--primary-color); */
+    font-size: 20px;
+    position: relative;
+    font-size: bold;
+    /* cursor: pointer; */
+}
+
+.circle:focus {
+    /* background-color: white; */
+    background: var(--text-color);
+    color: var(--primary-color);
 
 
 }
@@ -83,7 +112,7 @@ h5 {
     height: 19px;
     top: -1rem;
     left: 7rem;
-    position:absolute;
+    position: absolute;
     /* margin-bottom: 32px; */
     font-size: 16px;
     text-align: center;
@@ -140,8 +169,9 @@ p {
 
 /* Tablet Screen */
 @media (min-width:768px) {
-     body {
+    body {
         background-image: url('../../../assets/images/crew/Crewbg-desktop.jpg');
+        position: relative;
 
     }
 
@@ -161,7 +191,7 @@ p {
         width: 456.37px;
         height: 572px;
         left: 16rem;
-        top: -15.8rem;
+        top: -17.5rem;
         margin: auto;
         /* border-radius: 50%; */
         position: relative;
@@ -179,13 +209,13 @@ p {
     }
 
     h5 {
-        width:204px;
+        width: 204px;
         height: 24px;
         font-size: 20px;
         font-weight: 400;
         text-transform: uppercase;
         top: -35rem;
-        right:10rem;
+        right: 10rem;
         margin-left: 38.5px;
         position: relative;
         /* padding-bottom: 343px; */
@@ -194,7 +224,7 @@ p {
     .sub {
         width: 592px;
         height: 232px;
-        top:-32rem;
+        top: -32rem;
         position: relative;
         right: 13rem;
         /* margin-top: 246px; */
@@ -208,11 +238,12 @@ p {
         position: absolute;
         top: 3.5rem;
         text-align: center;
-        font-size:24px;
+        font-size: 24px;
         font-weight: 400;
 
     }
-    p{
+
+    p {
         width: 457px;
         height: 46px;
         font-size: 40px;
@@ -220,7 +251,8 @@ p {
         right: -0.5rem;
         bottom: -2rem;
     }
-    .career{
+
+    .career {
         width: 161px;
         height: 28px;
         right: 8rem;
@@ -235,11 +267,11 @@ p {
     }
 
     .word {
-        max-width:458px;
+        max-width: 458px;
         height: 84px;
         font-size: 16px;
         font-weight: 400;
-        text-align:center;
+        text-align: center;
         top: 8rem;
         position: absolute;
         /* word-spacing: -1px; */
@@ -247,26 +279,18 @@ p {
         position: relative;
         /* text-align:center; */
     }
-
-    .radio {
-        width: 88px;
-        height: 10px;
-        position: absolute;
-        bottom: -2rem;
-        left: 15rem;
-        margin-top: 40px;
-        /* color: #383b4b; */
-        /* left: -9rem; */
-
-
+    .circle-div{
+        top:100px;
+        left:220px;
     }
-    }
-   
-   
-    /* desktop screen */
+}
+
+
+/* desktop screen */
 @media(min-width:1110px) {
-   body {
+    body {
         background-image: url('../../../assets/images/crew/Crewbg-desktop.jpg');
+        position: relative;
 
     }
 
@@ -283,13 +307,13 @@ p {
     }
 
     .bg-desk {
-        width:568.07px;
-        height:712px;
+        width: 568.07px;
+        height: 712px;
         left: 17.5rem;
         top: -20.8rem;
         margin: auto;
         /* border-radius: 50%; */
-        position:absolute;
+        position: absolute;
         display: inline;
 
     }
@@ -298,17 +322,17 @@ p {
         display: none;
     }
 
-    .section-one{
+    .section-one {
         position: relative;
         bottom: -4rem;
     }
 
     h5 {
         position: absolute;
-        width:289px;
+        width: 289px;
         height: 34px;
-        top:-20rem;
-        left:-27.5rem ;
+        top: -20rem;
+        left: -27.5rem;
         font-size: 28px;
         font-weight: 400;
         text-transform: uppercase;
@@ -317,8 +341,8 @@ p {
     .sub {
         width: 592px;
         height: 232px;
-        top:270px;
-        position:absolute;
+        top: 270px;
+        position: absolute;
         left: 2rem;
         /* margin-top: 246px; */
         /* padding-bottom: 182px; */
@@ -335,10 +359,11 @@ p {
         font-weight: 400;
 
     }
+
     p {
-        font-size:56px;
+        font-size: 56px;
         position: relative;
-        top:-0.7rem;
+        top: -0.7rem;
         left: -1.5rem;
         width: 532px;
         height: 64px;
@@ -353,8 +378,8 @@ p {
     }
 
     .word {
-        max-width:444px;
-        height:128px;
+        max-width: 444px;
+        height: 128px;
         font-size: 18px;
         font-weight: 400;
         text-align: justify;
@@ -370,7 +395,7 @@ p {
         width: 132px;
         height: 15px;
         position: absolute;
-        bottom:-5rem;
+        bottom: -5rem;
         left: 1rem;
         margin-top: 40px;
         /* color: #383b4b; */
@@ -378,15 +403,20 @@ p {
 
 
     }
-    .line{
+
+    .line {
         position: relative;
         top: -27rem;
-        right:21rem;
+        right: 21rem;
     }
-    .career{
+
+    .career {
         width: 273px;
         height: 37px;
         position: relative;
         right: 8.5rem;
+    }
+    .circle-div{
+        left: 50px;
     }
 }
