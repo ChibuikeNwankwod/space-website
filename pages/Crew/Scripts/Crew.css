@@ -3,8 +3,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    z-index: -1;
-    position: relative;
 
 }
 
@@ -28,6 +26,7 @@ main {
     top: -3rem;
 }
 
+
 .sub {
     width: 327px;
     height: 262px;
@@ -47,7 +46,6 @@ h1 {
     text-align: center;
 
 }
-
 .circle-div {
     position: relative;
     /* width: 152px; */
@@ -112,7 +110,7 @@ h5 {
     height: 19px;
     top: -1rem;
     left: 7rem;
-    position: absolute;
+    position:absolute;
     /* margin-bottom: 32px; */
     font-size: 16px;
     text-align: center;
@@ -151,6 +149,13 @@ p {
     left: 7rem;
 
 }
+.bg-2{
+    width: 200px;
+    height: 233px;
+    bottom: -1.2rem;
+    position: relative;
+    left: 5.5rem;
+}
 
 .bg-desk {
     position: relative;
@@ -165,13 +170,16 @@ p {
     display: none;
 }
 
+.show-menu{
+    right: 0;
+
+}
 
 
 /* Tablet Screen */
 @media (min-width:768px) {
-    body {
+     body {
         background-image: url('../../../assets/images/crew/Crewbg-desktop.jpg');
-        position: relative;
 
     }
 
@@ -188,34 +196,46 @@ p {
     }
 
     .bg-desk {
-        width: 456.37px;
-        height: 572px;
+        width:368.85px;
+        height: 532px;
         left: 16rem;
-        top: -17.5rem;
+        top: -15.8rem;
         margin: auto;
         /* border-radius: 50%; */
         position: relative;
-        display: inline;
+        display: none;
 
     }
 
     .bg {
-        display: none;
+        display: block;
+        width: 600px;
+        height: 600px;
+        bottom: 16.3rem;
+        position: relative;
+        left: 9rem;
     }
 
     .back-img {
         position: relative;
         bottom: -4rem;
     }
+    .bg-2{
+        width: 600px;
+        height: 600px;
+        bottom: 16.3rem;
+        position: relative;
+        left: 9rem;
+    }
 
     h5 {
-        width: 204px;
+        width:204px;
         height: 24px;
         font-size: 20px;
         font-weight: 400;
         text-transform: uppercase;
         top: -35rem;
-        right: 10rem;
+        right:10rem;
         margin-left: 38.5px;
         position: relative;
         /* padding-bottom: 343px; */
@@ -224,7 +244,7 @@ p {
     .sub {
         width: 592px;
         height: 232px;
-        top: -32rem;
+        top:-32rem;
         position: relative;
         right: 13rem;
         /* margin-top: 246px; */
@@ -238,12 +258,11 @@ p {
         position: absolute;
         top: 3.5rem;
         text-align: center;
-        font-size: 24px;
+        font-size:24px;
         font-weight: 400;
 
     }
-
-    p {
+    p{
         width: 457px;
         height: 46px;
         font-size: 40px;
@@ -251,11 +270,10 @@ p {
         right: -0.5rem;
         bottom: -2rem;
     }
-
-    .career {
-        width: 161px;
+    .career{
+        width:240px;
         height: 28px;
-        right: 8rem;
+        right:6rem;
         position: absolute;
     }
 
@@ -267,11 +285,11 @@ p {
     }
 
     .word {
-        max-width: 458px;
+        max-width:458px;
         height: 84px;
         font-size: 16px;
         font-weight: 400;
-        text-align: center;
+        text-align:center;
         top: 8rem;
         position: absolute;
         /* word-spacing: -1px; */
@@ -279,18 +297,31 @@ p {
         position: relative;
         /* text-align:center; */
     }
+
+    .radio {
+        width: 88px;
+        height: 10px;
+        position: absolute;
+        bottom: -2rem;
+        left: 15rem;
+        margin-top: 40px;
+        /* color: #383b4b; */
+        /* left: -9rem; */
+
+
+    }
     .circle-div{
         top:100px;
         left:220px;
     }
-}
 
-
-/* desktop screen */
+    }
+   
+   
+    /* desktop screen */
 @media(min-width:1110px) {
-    body {
+   body {
         background-image: url('../../../assets/images/crew/Crewbg-desktop.jpg');
-        position: relative;
 
     }
 
@@ -307,13 +338,13 @@ p {
     }
 
     .bg-desk {
-        width: 568.07px;
-        height: 712px;
+        width: 453.44px;
+        height:580px;
         left: 17.5rem;
-        top: -20.8rem;
+        top: -33.3rem;
         margin: auto;
         /* border-radius: 50%; */
-        position: absolute;
+        position:absolute;
         display: inline;
 
     }
@@ -321,18 +352,21 @@ p {
     .bg {
         display: none;
     }
+    .bg-2{
+        display: none;
+    }
 
-    .section-one {
+    .section-one{
         position: relative;
         bottom: -4rem;
     }
 
     h5 {
         position: absolute;
-        width: 289px;
+        width:286px;
         height: 34px;
-        top: -20rem;
-        left: -27.5rem;
+        top:-26rem;
+        left:-30.5rem ;
         font-size: 28px;
         font-weight: 400;
         text-transform: uppercase;
@@ -341,8 +375,8 @@ p {
     .sub {
         width: 592px;
         height: 232px;
-        top: 270px;
-        position: absolute;
+        top:270px;
+        position:absolute;
         left: 2rem;
         /* margin-top: 246px; */
         /* padding-bottom: 182px; */
@@ -353,21 +387,29 @@ p {
         width: 433px;
         height: 64px;
         position: absolute;
-        top: 4rem;
-        right: -2rem;
-        /* font-size:56px; */
+        /* top: 4rem; */
+        right: -1rem;
+        font-size:32px;
         font-weight: 400;
 
     }
-
     p {
-        font-size: 56px;
+        font-size:56px;
         position: relative;
-        top: -0.7rem;
-        left: -1.5rem;
-        width: 532px;
+        top:-0.7rem;
+        left: -9.5rem;
+        width:800px;
         height: 64px;
         /* text-align: center;  */
+    }
+
+    .p2{
+        font-size:56px;
+        position: relative;
+        top:-0.7rem;
+        left: -5.5rem;
+        width:800px;
+        height: 64px;
     }
 
     h1 {
@@ -378,11 +420,11 @@ p {
     }
 
     .word {
-        max-width: 444px;
-        height: 128px;
+        max-width:444px;
+        height:128px;
         font-size: 18px;
         font-weight: 400;
-        text-align: justify;
+        text-align:justify;
         top: 8rem;
         position: absolute;
         /* word-spacing: -1px; */
@@ -395,7 +437,7 @@ p {
         width: 132px;
         height: 15px;
         position: absolute;
-        bottom: -5rem;
+        bottom:-5rem;
         left: 1rem;
         margin-top: 40px;
         /* color: #383b4b; */
@@ -403,18 +445,16 @@ p {
 
 
     }
-
-    .line {
+    .line{
         position: relative;
-        top: -27rem;
-        right: 21rem;
+        top: -32rem;
+        right:17rem;
     }
-
-    .career {
-        width: 273px;
+    .career{
+        width:309px;
         height: 37px;
         position: relative;
-        right: 8.5rem;
+        right: 3.6rem;
     }
     .circle-div{
         left: 50px;

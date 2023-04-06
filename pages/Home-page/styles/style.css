@@ -45,7 +45,67 @@ header ul{
 .menu-icon{
     cursor: pointer;
 }
+.show-menu{
+    right: 0;
 
+}
+
+#close-menu{
+    position: absolute;
+    left: 2rem;
+    top:1rem ;
+    cursor: pointer;
+    
+
+}
+.links{
+    color:azure;
+    text-decoration: none;
+    display: block;
+   
+   }
+
+.mobile-menu-content{
+        display: flex;
+        flex-direction: column;
+        width:50%;
+        gap: 20%;
+        padding: 10% 4px;
+        /* justify-content: space-around; */
+        list-style: none;
+        align-items: center;
+        height: 100vh;
+        position: fixed;
+        z-index: 1000;
+        backdrop-filter: blur(30.7742px);
+        /* backdrop-filter: blur(80.7742px); */
+        background-color:  rgba(14, 13, 13, 0.04);
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        right: -100%;
+        transition: all 2s;
+ }
+  .links:focus + .focus{
+    width: 100%;
+    height: 2px;
+    background: rgba(249, 249, 252, 0.74);
+    position: absolute;
+    bottom: 0;
+   } 
+/* .menu-content{ 
+        display: flex;
+        width: 450px;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center;
+        height: 96px;
+        backdrop-filter: blur(40.7742px);
+        background-color:  rgba(255, 255, 255, 0.04);
+        text-transform: uppercase;
+        font-size: 14px;
+        transition: all 2s;
+    }  */
 
 @media (min-width: 768px) {
     
@@ -58,16 +118,18 @@ header ul{
         margin-left: 39px;
     }
    .menu-content{
-        display: flex;
+        /* display: flex; */
         width: 450px;
         justify-content: space-around;
         list-style: none;
         align-items: center;
         height: 96px;
-        backdrop-filter: blur(40.7742px);
+        backdrop-filter: blur(30.7742px);
         background-color:  rgba(255, 255, 255, 0.04);
         text-transform: uppercase;
         font-size: 14px;
+        display: none;
+        /* transition: all 2s; */
     }
     .menu-content >li{
         display: flex;
@@ -76,6 +138,9 @@ header ul{
         text-align: center;
         position: relative;
         height: 100%;
+        display: none;
+        /* transition: all 2s; */
+
         
     }
    .links{
@@ -88,7 +153,7 @@ header ul{
    .links:focus + .focus{
     width: 100%;
     height: 2px;
-    background: white;
+    background: rgba(11, 60, 221, 0.74);
     position: absolute;
     bottom: 0;
    } 
@@ -101,7 +166,9 @@ header ul{
    } 
    
     .menu-icon{
-        display: none;
+        display: flex;
+        right: 2rem;
+        position: relative;
     
     }
 
@@ -114,10 +181,20 @@ header ul{
     .menu-content{
         width: 830px;
         font-size: 16px;
+        display: flex;
+    }
+    .menu-content > li{
+        display: flex;
     }
     .num{
         display: inline;
     }
   
+    .mobile-menu-content{
+        display: none;
+    }
+    .menu-icon{
+        display:none
     
+    }
 }
