@@ -16,10 +16,10 @@ main{
 .line{
     width:410px;
     height: 1px;
-    position:relative;
+    position:absolute;
     background-color: #383b4b;
-    bottom: 3rem;
-    left: 8rem;
+    top: -5rem;
+    left: 9rem;
     display: none;
 
 

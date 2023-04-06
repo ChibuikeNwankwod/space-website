@@ -127,7 +127,7 @@ p {
 .line {
     width: 410px;
     height: 1px;
-    position: relative;
+    position: absolute;
     background-color: #383b4b;
     /* margin-top:-120px; */
     bottom: -1rem;
@@ -341,7 +341,7 @@ p {
         width: 453.44px;
         height:580px;
         left: 17.5rem;
-        top: -33.3rem;
+        top: -23.3rem;
         margin: auto;
         /* border-radius: 50%; */
         position:absolute;
@@ -446,9 +446,9 @@ p {
 
     }
     .line{
-        position: relative;
+        position:absolute;
         top: -32rem;
-        right:17rem;
+        right:11rem;
     }
     .career{
         width:309px;
