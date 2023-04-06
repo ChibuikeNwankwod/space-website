@@ -18,8 +18,8 @@ main{
     height: 1px;
     position:absolute;
     background-color: #383b4b;
-    top: -5rem;
-    left: 9rem;
+    /* top: -5rem; */
+    /* left: 9rem; */
     display: none;
 
 
