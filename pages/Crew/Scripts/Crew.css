@@ -23,7 +23,7 @@ main {
     /* gap: 16px; */
     /* margin-top: 49px; */
     position: relative;
-    top: -3rem;
+    /* top: -3rem; */
 }
 
 
@@ -130,8 +130,8 @@ p {
     position: absolute;
     background-color: #383b4b;
     /* margin-top:-120px; */
-    /* bottom: -1rem; */
-    /* right: 0.2rem; */
+    /* top: -14rem; */
+    right: 0.2rem;
     /* display: none; */
 }
 
@@ -447,7 +447,7 @@ p {
     }
     .line{
         position:absolute;
-        top: -32rem;
+        top: -30rem;
         right:11rem;
     }
     .career{
