@@ -36,7 +36,7 @@ main {
     /* gap: 16px; */
     /* margin-top: 42px; */
     position: relative;
-    bottom: -1.5rem;
+    bottom: -6.5rem;
     right: 4.2rem;
 
 }
@@ -53,7 +53,7 @@ h1 {
     display: flex;
     gap: 1rem;
     place-items: center;
-    bottom: 12rem;
+    top: -16rem;
     left: 10rem;
     cursor: pointer;
 }
@@ -209,7 +209,7 @@ p {
         display: block;
         width: 532px;
         height:539px;
-        bottom: 12rem;
+        bottom: 15.9rem;
         position: relative;
         left: 15rem;
     }
@@ -221,7 +221,7 @@ p {
     .bg-2{
         width: 600px;
         height: 600px;
-        bottom: 15.7rem;
+        bottom: 19.7rem;
         position: relative;
         left: 9rem;
     }
@@ -309,7 +309,7 @@ p {
 
     }
     .circle-div{
-        top:100px;
+        top:95px;
         left:220px;
     }
 
