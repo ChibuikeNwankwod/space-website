@@ -134,7 +134,7 @@ p {
     background-color: #383b4b;
     /* margin-top:-120px; */
     /* bottom: -1.5rem; */
-    right: 14rem;
+    right: 13rem;
     display: none;
 
 
@@ -343,11 +343,11 @@ p {
 
     .image-desk {
         display: inline;
-        width: 525px;
-        height: 560px;
-        bottom: -300px;
+        width: 515px;
+        height: 500px;
+        bottom: -240px;
         size: cover;
-        left: 37.5rem;
+        left: 24.5rem;
         /* margin-top:36px; */
         position: absolute;
     }
@@ -398,7 +398,7 @@ p {
 
     .bottom {
         right: -410px;
-        width: 450px;
+        width: 480px;
         height: 64px;
         top: 5rem;
         font-size: 56px;
@@ -434,7 +434,6 @@ p {
         width: 444px;
         height: 303px;
         position: absolute;
-        right: 300px;
         /* margin: auto;
     right: 0;
     left: 0; */
@@ -454,6 +453,5 @@ p {
 
     .line {
         display: inline;
-        right: 6rem;
     }
 }
