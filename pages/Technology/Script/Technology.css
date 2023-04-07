@@ -134,7 +134,7 @@ p {
     background-color: #383b4b;
     /* margin-top:-120px; */
     /* bottom: -1.5rem; */
-    right: 13rem;
+    right: 14rem;
     display: none;
 
 
@@ -144,6 +144,14 @@ p {
     width: 327px;
     height: 28px;
     left: 1.2rem;
+    /* top: -200px; */
+    position: absolute;
+    text-align: center;
+}
+.bottom-1 {
+    width: 327px;
+    height: 28px;
+    left: 2rem;
     /* top: -200px; */
     position: absolute;
     text-align: center;
@@ -335,11 +343,11 @@ p {
 
     .image-desk {
         display: inline;
-        width: 515px;
-        height: 500px;
-        bottom: -240px;
+        width: 525px;
+        height: 560px;
+        bottom: -300px;
         size: cover;
-        left: 24.5rem;
+        left: 37.5rem;
         /* margin-top:36px; */
         position: absolute;
     }
@@ -386,12 +394,22 @@ p {
         top: 4rem;
         position: absolute;
     }
+    
 
     .bottom {
         right: -410px;
         width: 450px;
         height: 64px;
         top: 5rem;
+        font-size: 56px;
+    }
+    .bottom-1{
+        /* right: -470px; */
+        /* width: 450px; */
+        height: 64px;
+        top: 5rem;
+        left: 10px;
+        position: absolute;
         font-size: 56px;
     }
 
@@ -416,6 +434,7 @@ p {
         width: 444px;
         height: 303px;
         position: absolute;
+        right: 300px;
         /* margin: auto;
     right: 0;
     left: 0; */
@@ -435,5 +454,6 @@ p {
 
     .line {
         display: inline;
+        right: 6rem;
     }
 }
