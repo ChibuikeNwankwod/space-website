@@ -50,9 +50,10 @@ main {
 }
 
 .image-one {
-    width: 474px;
+    width: 374px;
     position: absolute;
     height: 170px;
+    left: 46.7px;
 
 }
 
@@ -258,7 +259,7 @@ p {
     }
 
     .image-two {
-        display: inline;
+        display: block;
     }
 
     .image-desk {
@@ -288,12 +289,12 @@ p {
     }
 
     .word {
-        width: 458px;
+        width: 658px;
         height: 237px;
         position: absolute;
         top: 470px;
         margin: auto;
-        left: -3rem;
+        left: -6rem;
         right: 0;
 
     }
@@ -320,9 +321,19 @@ p {
     }
 
     .bottom {
+        width: 400px;
         font-size: 40px;
         left: 0.5rem;
         position: absolute;
+    }
+    .bottom-1{
+        /* right: -470px; */
+        /* width: 450px; */
+        /* height: 64px; */
+        /* top: 5rem; */
+        left: 3px;
+        position: absolute;
+        /* font-size: 56px; */
     }
 }
 
@@ -398,8 +409,8 @@ p {
 
     .bottom {
         right: -410px;
-        width: 480px;
-        height: 64px;
+        width: 500px;
+        /* height: 64px; */
         top: 5rem;
         font-size: 56px;
     }

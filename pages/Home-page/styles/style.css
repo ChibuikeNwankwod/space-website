@@ -77,9 +77,9 @@ header ul{
         height: 100vh;
         position: fixed;
         z-index: 1000;
-        backdrop-filter: blur(30.7742px);
-        /* backdrop-filter: blur(80.7742px); */
-        background-color:  rgba(14, 13, 13, 0.04);
+        /* backdrop-filter: blur(40.7742px); */
+        backdrop-filter: blur(80.7742px);
+        background-color:  rgba(8, 8, 8, 0.884);
         text-transform: uppercase;
         font-size: 14px;
         font-weight: 700;
@@ -118,7 +118,7 @@ header ul{
         margin-left: 39px;
     }
    .menu-content{
-        /* display: flex; */
+        display: flex;
         width: 450px;
         justify-content: space-around;
         list-style: none;
@@ -128,7 +128,7 @@ header ul{
         background-color:  rgba(255, 255, 255, 0.04);
         text-transform: uppercase;
         font-size: 14px;
-        display: none;
+        /* display:; */
         /* transition: all 2s; */
     }
     .menu-content >li{
@@ -138,7 +138,7 @@ header ul{
         text-align: center;
         position: relative;
         height: 100%;
-        display: none;
+        /* display: none; */
         /* transition: all 2s; */
 
         
@@ -166,7 +166,7 @@ header ul{
    } 
    
     .menu-icon{
-        display: flex;
+        display: none;
         right: 2rem;
         position: relative;
     
