@@ -241,7 +241,7 @@ p {
 
     .sub {
         width: 592px;
-        height: 232px;
+        /* height: 232px; */
         top:-32rem;
         position: relative;
         right: 13rem;
@@ -284,7 +284,7 @@ p {
 
     .word {
         max-width:528px;
-        height: 84px;
+        /* height: 84px; */
         font-size: 16px;
         font-weight: 400;
         text-align:center;
