@@ -90,7 +90,7 @@ p{
 
 .rule{
     position:relative;
-    width: 144px;
+    width: 174px;
     height: 61px;
     font-size: 14px;
     font-weight: 400;
@@ -98,7 +98,7 @@ p{
     left: 0.5px;
     margin-top: 1px;
     margin: auto;
-    left: 0;
+    left: 2rem;
     color: #D0D6F9;
     text-transform: uppercase;
  }

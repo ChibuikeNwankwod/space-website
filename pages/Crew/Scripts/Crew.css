@@ -56,6 +56,7 @@ h1 {
     top: -11.8rem;
     left: 10rem;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .circle {
@@ -207,11 +208,11 @@ p {
 
     .bg {
         display: block;
-        width: 532px;
+        width: 500px;
         height:539px;
         bottom: 16rem;
         position: relative;
-        left: 15rem;
+        left: 11rem;
     }
 
     .back-img {
@@ -240,7 +241,7 @@ p {
     }
 
     .sub {
-        width: 592px;
+        width: 600px;
         /* height: 232px; */
         top:-8rem;
         position: relative;

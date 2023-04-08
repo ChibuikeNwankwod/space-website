@@ -148,6 +148,7 @@ p {
     /* top: -200px; */
     position: absolute;
     text-align: center;
+    /* text-decoration: none; */
 }
 .bottom-1 {
     width: 327px;
@@ -156,6 +157,7 @@ p {
     /* top: -200px; */
     position: absolute;
     text-align: center;
+    /* text-decoration: none; */
 }
 
 .circle-div {
