@@ -3,7 +3,7 @@ const MenuContent = document.querySelector(".mobile-menu-content");
 const Children = document.querySelectorAll(".mobile-menu-content > li");
 const close = document.getElementById("close-menu");
 
-// console.log(Children);
+console.log(Children);
 
 MenuIcon.addEventListener("click", () => {
   MenuContent.classList.add("show-menu");

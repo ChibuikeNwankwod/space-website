@@ -1,470 +1,465 @@
 body {
-    background: url('../../../assets/images/Technology/technology-mobile-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    z-index: -1;
-    position: relative;
-
+  background: url("../../../assets/images/Technology/technology-mobile-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: -1;
+  position: relative;
 }
 
 main {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 81px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 81px;
 }
 
 .image-two {
-    display: none;
+  display: none;
 }
 
 .image-desk {
-    display: none;
+  display: none;
 }
-.show-menu{
-    right: 0;
-
+.show-menu {
+  right: 0;
 }
 
 .container {
-    max-width: 375px;
-    height: 220px;
-    position: absolute;
-    margin: auto;
-    right: 0;
-    left: 0;
-    z-index: -1;
+  max-width: 375px;
+  height: 220px;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .img {
-    width: 374px;
-    height: 170px;
-    bottom: -150px;
-    size: cover;
-    left: -3rem;
-    margin-top: 36px;
-    position: relative;
+  width: 374px;
+  height: 170px;
+  bottom: -150px;
+  size: cover;
+  left: -3rem;
+  margin-top: 36px;
+  position: relative;
 }
 
 .image-one {
-    width: 374px;
-    position: absolute;
-    height: 170px;
-    left: 46.7px;
-
+  width: 374px;
+  position: absolute;
+  height: 170px;
+  left: 46.7px;
 }
 
 .cap {
-    width: 176px;
-    height: 19px;
-    top: 5px;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 88px;
-    text-align: center;
-    position: absolute;
+  width: 176px;
+  height: 19px;
+  top: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 88px;
+  text-align: center;
+  position: absolute;
 }
 
 .word {
-    width: 327px;
-    height: 150px;
-    top: 255px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    position: relative;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 400;
+  width: 327px;
+  height: 150px;
+  top: 255px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .heading {
-    width: 327px;
-    height: 54px;
-    font-size: 24px;
-    text-align: center;
-    top: 100px;
-    font-weight: 400;
-    position: relative;
+  width: 327px;
+  height: 54px;
+  font-size: 24px;
+  text-align: center;
+  top: 100px;
+  font-weight: 400;
+  position: relative;
 }
 
 .links {
-    color: inherit;
-    text-decoration: none;
-    display: block;
+  color: inherit;
+  text-decoration: none;
+  display: block;
 }
 
-.links:focus+.focus {
-    width: 36px;
-    height: 3px;
-    background: #ffff;
-    position: absolute;
+.links:focus + .focus {
+  width: 36px;
+  height: 3px;
+  background: #ffff;
+  position: absolute;
 }
 
-.links:hover+.focus {
-    width: 50px;
-    height: 2px;
-    background: rgb(115, 115, 116);
-    position: absolute;
-
+.links:hover + .focus {
+  width: 50px;
+  height: 2px;
+  background: rgb(115, 115, 116);
+  position: absolute;
 }
 
 p {
-    width: 327px;
-    height: 28px;
-    text-align: center;
+  width: 327px;
+  height: 28px;
+  text-align: center;
 }
 
 .top {
-    width: 132px;
-    height: 17px;
-    right: -3rem;
-    /* bottom: -160px; */
-    position: relative;
-    text-align: center;
-    font-size: 14px;
+  width: 132px;
+  height: 17px;
+  right: -3rem;
+  /* bottom: -160px; */
+  position: relative;
+  text-align: center;
+  font-size: 14px;
 }
 
 .line {
-    width: 410px;
-    height: 1px;
-    position: absolute;
-    background-color: #383b4b;
-    /* margin-top:-120px; */
-    /* bottom: -1.5rem; */
-    right: 13rem;
-    display: none;
-
-
+  width: 410px;
+  height: 1px;
+  position: absolute;
+  background-color: #383b4b;
+  /* margin-top:-120px; */
+  /* bottom: -1.5rem; */
+  right: 13rem;
+  display: none;
 }
 
 .bottom {
-    width: 327px;
-    height: 28px;
-    left: 1.2rem;
-    /* top: -200px; */
-    position: absolute;
-    text-align: center;
-    /* text-decoration: none; */
+  width: 327px;
+  height: 28px;
+  left: 1.2rem;
+  /* top: -200px; */
+  position: absolute;
+  text-align: center;
+  /* text-decoration: none; */
 }
 .bottom-1 {
-    width: 327px;
-    height: 28px;
-    left: 2rem;
-    /* top: -200px; */
-    position: absolute;
-    text-align: center;
-    /* text-decoration: none; */
+  width: 327px;
+  height: 28px;
+  left: 2rem;
+  /* top: -200px; */
+  position: absolute;
+  text-align: center;
+  /* text-decoration: none; */
 }
 
 .circle-div {
-    position: relative;
-    width: 152px;
-    aspect-ratio: 1/1;
-    display: flex;
-    gap: 1rem;
-    place-items: center;
-    top: 1rem;
-    left: 6rem;
-    cursor:pointer;
-    
+  position: relative;
+  width: 152px;
+  aspect-ratio: 1/1;
+  display: flex;
+  gap: 1rem;
+  place-items: center;
+  top: 1rem;
+  left: 6rem;
+  cursor: pointer;
 }
 
 .circle {
-    width: 50%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    /* background: var(--text-color); */
-    color: white;
-    border: 1px solid white;
-    /* color: var(--primary-color); */
-    font-size: 20px;
-    position: relative;
-    font-size: bold;
-    /* cursor: pointer; */
+  width: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  /* background: var(--text-color); */
+  color: white;
+  border: 1px solid white;
+  /* color: var(--primary-color); */
+  font-size: 20px;
+  position: relative;
+  font-size: bold;
+  /* cursor: pointer; */
 }
 
-.circle-three:focus{
-    /* background-color: white; */
-    background: var(--text-color);
-    color: var(--primary-color);
-
-
+.circle:focus {
+  /* background-color: white; */
+  background: var(--text-color);
+  color: var(--primary-color);
 }
-
-.circle-two{
-    width: 50%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    /* background: var(--text-color); */
-    color: white;
-    border: 1px solid white;
-    /* color: var(--primary-color); */
-    font-size: 20px;
-    position: relative;
-    font-size: bold;
-    /* cursor: pointer; */
+/* .circle-two:focus {
+  background-color: white;
+  background: var(--text-color);
+  color: var(--primary-color);
 }
+.circle-three:focus {
+  background-color: white;
+  background: var(--text-color);
+  color: var(--primary-color);
+} */
 
-.circle-three {
-    width: 50%;
-    display: grid;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    place-items: center;
-    /* background: var(--text-color); */
-    /* color: var(--primary-color); */
-    color: white;
-    border: 1px solid white;
-    font-size: 20px;
-    position: relative;
-    font-size: bold;
-    /* cursor: pointer; */
-}
+/* .circle-two {
+  width: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: grid;
+  place-items: center; */
+/* background: var(--text-color); */
+/* color: white;
+  border: 1px solid white;
+  /* color: var(--primary-color); */
+/* font-size: 20px;
+  position: relative;
+  font-size: bold; */
+/* cursor: pointer; */
+/* }  */
+
+/* .circle-three {
+  width: 50%;
+  display: grid;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  place-items: center; */
+/* background: var(--text-color); */
+/* color: var(--primary-color); */
+/* color: white;
+  border: 1px solid white;
+  font-size: 20px;
+  position: relative;
+  font-size: bold; */
+/* cursor: pointer; */
+/* } */
 
 .nun {
-    width: 17px;
-    height: 19px;
-    opacity: 25%;
-    font-size: 16px;
-    font-weight: 700;
+  width: 17px;
+  height: 19px;
+  opacity: 25%;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 /* TABLET SCREEN */
-@media (min-width:768PX) {
-    body {
-        background: url(../../../assets/images/Technology/Technology-desktop-bg.png);
-        position: relative;
-    }
+@media (min-width: 768px) {
+  body {
+    background: url(../../../assets/images/Technology/Technology-desktop-bg.png);
+    position: relative;
+  }
 
-    .image-two {
-        width: 768px;
-        height: 310px;
-        bottom: -150px;
-        size: cover;
-        left: -9.5rem;
-        margin-top: 36px;
-        position: absolute;
-        /* position: relative; */
-        /* width: 768px;
+  .image-two {
+    width: 768px;
+    height: 310px;
+    bottom: -150px;
+    size: cover;
+    left: -9.5rem;
+    margin-top: 36px;
+    position: absolute;
+    /* position: relative; */
+    /* width: 768px;
         height: 310px;
         top: 200px;
         left: 0px; */
+  }
 
-    }
+  .image-two {
+    display: block;
+  }
 
-    .image-two {
-        display: block;
-    }
+  .image-desk {
+    display: none;
+  }
 
-    .image-desk {
-        display: none;
-    }
+  .image-one {
+    display: none;
+  }
 
-    .image-one {
-        display: none;
+  .cap {
+    width: 217px;
+    height: 24px;
+    top: 6rem;
+    left: -15rem;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+  }
 
-    }
+  .container {
+    width: 458px;
+    height: 237px;
+    position: absolute;
+  }
 
-    .cap {
-        width: 217px;
-        height: 24px;
-        top: 6rem;
-        left: -15rem;
-        font-size: 16px;
-        text-transform: uppercase;
-        position: relative;
+  .word {
+    width: 658px;
+    height: 237px;
+    position: absolute;
+    top: 470px;
+    margin: auto;
+    left: -6rem;
+    right: 0;
+  }
 
-    }
+  .heading {
+    position: absolute;
+    top: 250px;
+  }
 
-    .container {
-        width: 458px;
-        height: 237px;
-        position: absolute;
-    }
+  p {
+    width: 217px;
+    height: 24px;
+    font-size: 20px;
+    font-weight: 400px;
+    left: 4rem;
+    position: absolute;
+  }
 
-    .word {
-        width: 658px;
-        height: 237px;
-        position: absolute;
-        top: 470px;
-        margin: auto;
-        left: -6rem;
-        right: 0;
+  .nun {
+    width: 22px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 20px;
+  }
 
-    }
-
-    .heading {
-        position: absolute;
-        top: 250px;
-    }
-
-    p {
-        width: 217px;
-        height: 24px;
-        font-size: 20px;
-        font-weight: 400px;
-        left: 4rem;
-        position: absolute;
-    }
-
-    .nun {
-        width: 22px;
-        height: 24px;
-        font-weight: 700;
-        font-size: 20px;
-    }
-
-    .bottom {
-        width: 400px;
-        font-size: 40px;
-        left: 0.5rem;
-        position: absolute;
-    }
-    .bottom-1{
-        /* right: -470px; */
-        /* width: 450px; */
-        /* height: 64px; */
-        /* top: 5rem; */
-        left: 3px;
-        position: absolute;
-        /* font-size: 56px; */
-    }
+  .bottom {
+    width: 400px;
+    font-size: 40px;
+    left: 0.5rem;
+    position: absolute;
+  }
+  .bottom-1 {
+    /* right: -470px; */
+    /* width: 450px; */
+    /* height: 64px; */
+    /* top: 5rem; */
+    left: 3px;
+    position: absolute;
+    /* font-size: 56px; */
+  }
 }
 
 /* Desktop Screen */
-@media (min-width:1110px) {
+@media (min-width: 1110px) {
+  body {
+    background: url(../../../assets/images/Technology/Technology-desktop-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    position: relative;
+  }
 
-    body {
-        background: url(../../../assets/images/Technology/Technology-desktop-bg.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
-        position: relative;
-    }
+  .image-two {
+    display: none;
+  }
 
-    .image-two {
-        display: none;
-    }
+  .image-desk {
+    display: inline;
+    width: 515px;
+    height: 500px;
+    bottom: -240px;
+    size: cover;
+    left: 24.5rem;
+    /* margin-top:36px; */
+    position: absolute;
+  }
 
-    .image-desk {
-        display: inline;
-        width: 515px;
-        height: 500px;
-        bottom: -240px;
-        size: cover;
-        left: 24.5rem;
-        /* margin-top:36px; */
-        position: absolute;
-    }
+  .nun {
+    font-size: 28px;
+    width: 30px;
+    height: 34px;
+    font-weight: 700;
+    opacity: 25%;
+  }
 
-    .nun {
-        font-size: 28px;
-        width: 30px;
-        height: 34px;
-        font-weight: 700;
-        opacity: 25%;
-    }
+  p {
+    width: 300px;
+    top: 40px;
+    height: 34px;
+    left: -100px;
+    position: absolute;
+    font-size: 28px;
+    font-weight: 400;
+  }
 
-    p {
-        width: 300px;
-        top: 40px;
-        height: 34px;
-        left: -100px;
-        position: absolute;
-        font-size: 28px;
-        font-weight: 400;
-    }
+  .img {
+    width: 790.5px;
+    height: 527px;
+    /* top:6rem; */
+    /* left: -15rem; */
+    /* font-size: 16px; */
+    /* text-transform: uppercase; */
+    position: absolute;
+  }
 
-    .img {
-        width: 790.5px;
-        height: 527px;
-        /* top:6rem; */
-        /* left: -15rem; */
-        /* font-size: 16px; */
-        /* text-transform: uppercase; */
-        position: absolute;
-    }
+  .word {
+    width: 438px;
+    height: 192px;
+    position: absolute;
+    top: 300px;
+    text-align: justify;
+    left: -450px;
+  }
 
-    .word {
-        width: 438px;
-        height: 192px;
-        position: absolute;
-        top: 300px;
-        text-align: justify;
-        left: -450px;
-    }
+  .Top {
+    left: 2rem;
+    top: 4rem;
+    position: absolute;
+  }
 
-    .Top {
-        left: 2rem;
-        top: 4rem;
-        position: absolute;
-    }
-    
+  .bottom {
+    right: -410px;
+    width: 500px;
+    /* height: 64px; */
+    top: 5rem;
+    font-size: 56px;
+  }
+  .bottom-1 {
+    /* right: -470px; */
+    /* width: 450px; */
+    height: 64px;
+    top: 5rem;
+    left: 10px;
+    position: absolute;
+    font-size: 56px;
+  }
 
-    .bottom {
-        right: -410px;
-        width: 500px;
-        /* height: 64px; */
-        top: 5rem;
-        font-size: 56px;
-    }
-    .bottom-1{
-        /* right: -470px; */
-        /* width: 450px; */
-        height: 64px;
-        top: 5rem;
-        left: 10px;
-        position: absolute;
-        font-size: 56px;
-    }
+  .circle-div {
+    top: 4rem;
+    position: absolute;
+    left: -120px;
+    display: grid;
+  }
 
-    .circle-div {
-        top: 4rem;
-        position: absolute;
-        left: -120px;
-        display: grid;
-    }
-
-    .heading {
-        /* font-size: 56px; */
-        font-weight: 400;
-        /* width:417px ;
+  .heading {
+    /* font-size: 56px; */
+    font-weight: 400;
+    /* width:417px ;
         height: 64px; */
-        top: 160px;
-        left: -280px;
-        position: absolute;
-    }
+    top: 160px;
+    left: -280px;
+    position: absolute;
+  }
 
-    .container {
-        width: 444px;
-        height: 303px;
-        position: absolute;
-        /* margin: auto;
+  .container {
+    width: 444px;
+    height: 303px;
+    position: absolute;
+    /* margin: auto;
     right: 0;
     left: 0; */
-    }
+  }
 
-    .circle {
-        width: 30%;
-    }
+  .circle {
+    width: 30%;
+  }
 
-    .circle-two {
-        width: 30%;
-    }
+  /* .circle-two {
+    width: 30%;
+  }
 
-    .circle-three {
-        width: 30%;
-    }
+  .circle-three {
+    width: 30%;
+  } */
 
-    .line {
-        display: inline;
-    }
+  .line {
+    display: inline;
+  }
 }
